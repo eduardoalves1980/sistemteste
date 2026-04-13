@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carregando Sistema de Ponto...</title>
+    <script>
+        // --- CONFIGURAÇÃO ---
+        // Toda vez que você fizer uma nova implantação no Google, 
+        // mude APENAS o ID entre as aspas abaixo:
+        const idAtualDoGoogle = "COLE_AQUI_O_ID_DA_NOVA_IMPLANTACAO";
+        
+        const urlFinal = "https://script.google.com/macros/s/" + idAtualDoGoogle + "/exec";
+        
+        // Comando que faz o navegador pular para o App Script
+        window.location.href = urlFinal;
+    </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+    <p>Redirecionando para a versão mais recente...</p>
+    <p>Se não carregar em 5 segundos, <a id="link" href="#">clique aqui</a>.</p>
+    <script>
+        document.getElementById('link').href = urlFinal;
+    </script>
+</body>
+</html>
